@@ -1,0 +1,206 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.main{
+    height: 100vh;
+    overflow: hidden;
+}
+#mobile{
+  display: none;
+}
+#desktop{
+    display: block;
+}
+.main img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#nav ul{
+    display: flex;
+    justify-content: end;
+}
+#nav ul li{
+    color: hsl(0, 0%, 100%);
+    list-style: none;
+    padding: 1rem 2rem;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    position: relative;
+    font-size: 1.5rem;
+}
+.li::before{
+    content:" ";
+    width: 0;
+    background: white;
+    height: 1px;
+    left: 10px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transition: ease 0.5s;
+    border-radius: 40px;
+}
+.li:hover::before{
+    width: 80%;
+}
+.content{
+    font-family: 'Josefin Sans', sans-serif;
+    color:  hsl(0, 0%, 100%);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.content h2{
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 5rem;
+    padding: 0 2rem;
+}
+.cont{
+    border: 1px solid hsl(0, 0%, 100%);
+    width: 45%;
+}
+.section{
+    height: auto;
+}
+.img{
+    position: relative;
+}
+.creations{
+    height: auto;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading button{
+   border: 1px solid hsl(0, 0%, 0%);
+   font-family: 'Josefin Sans', sans-serif;
+   padding: 1rem;
+   width: 20%;
+   background: white;
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+   font-size: 1.1rem;
+   font-weight: 500;
+}
+.heading button:hover{
+    background: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    transition: ease 0.5s;
+}
+.heading h3{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 41%, 0.473);
+}
+.images{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.images img{
+    margin: 0.5rem;
+}
+.imga{
+    position: relative;
+}
+.imga h3{
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    padding-top: 26rem;
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
+}
+.imga:hover h3{
+    background: rgba(255, 255, 255, 0.356);
+    color: hsl(0, 0%, 0%);
+    transition: ease 0.5s;
+}
+.message{
+    width: 50%;
+    height: 55%;
+    right: 20px;
+    position: absolute;
+    top: 230px;
+    bottom: 0;
+    padding: 3rem;
+    padding-bottom: 0;
+    background: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 41%);
+}
+.message h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.message p{
+    font-family: 'Alata', sans-serif;  
+    font-size: 1.2rem; 
+}
+
+.footer{
+    background: hsl(0, 0%, 0%);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.right i{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    padding: 0.6rem;
+}
+.right p{
+    color: hsl(0, 0%, 55%);
+    font-family: 'Alata', sans-serif;
+    font-size: 1.2rem;
+    padding-top:  1rem;
+}
+.left img{
+    padding: 1rem 0rem;
+}
+.ul li{
+    color: hsl(0, 0%, 100%);
+    list-style: none;
+    padding: 1rem;
+    font-family: 'Alata', sans-serif;  
+}
+.ul{
+    justify-content: start;
+}
+
+
